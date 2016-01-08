@@ -2,6 +2,10 @@ sudo: false
 before_install:
   - npm install -g npm
   - npm update -g npm
+services:
+  - mongodb
+before_script:
+  - sleep 15
 language: node_js
 node_js:
   - "0.12"
